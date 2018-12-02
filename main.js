@@ -254,11 +254,11 @@ var ListePaysComponent = /** @class */ (function () {
             console.log('else');
             this.countryService
                 .getMovie('https://imanebahousspreprod.000webhostapp.com/req.php?searsh=' + find)
-                .then(function (l) { return (_this.listeFilm = l); })
                 .then(function (l) {
-                return document
+                document
                     .getElementById('placeholder')
-                    .setAttribute('data-placeholder', String(_this.listeFilm.length));
+                    .setAttribute('data-placeholder', String(l.length));
+                _this.listeFilm = l;
             });
         }
     };

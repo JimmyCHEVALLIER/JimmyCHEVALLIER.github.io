@@ -210,7 +210,7 @@ module.exports = ".hidden {\n  display: none;\n}\n\nth {\n  width: 10%;\n  text-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row center\">\n  <button\n    (click)=\"onSearchChange(find.value)\"\n    id=\"download-button\"\n    class=\"btn-large waves-effect waves-red watermelon\"\n  >\n    Search\n  </button>\n</div>\n\n<div class=\"row center\" id=\"search\">\n  <div class=\"col s12 m4 l4\"></div>\n  <div class=\"col s12 m4 l4\">\n    <label style=\"color:#26a69a;\" for=\"input_text\"\n      >Enter a keyword (from our dB of 15 000 movie plot)</label\n    >\n    <div id=\"placeholder\" class=\"placeholder\" data-placeholder=\"\">\n      <input id=\"input_text\" type=\"text\" id=\"find\" #find />\n    </div>\n  </div>\n  <div class=\"col s12 m4 l4\"></div>\n</div>\n\n<br /><br />\n<div [ngClass]=\"{ hidden: !find.value }\">\n  <table>\n    <thead>\n      <tr>\n        <th><a>Keyword</a></th>\n        <th><a>MovieName</a></th>\n        <th><a>ReleaseDate</a></th>\n        <th><a>Budget</a></th>\n        <th><a>BoxOffice</a></th>\n      </tr>\n    </thead>\n  </table>\n\n  <section *ngFor=\"let Movie of this.listeFilm\">\n    <app-movie [M]=\"Movie\"></app-movie>\n  </section>\n</div>\n"
+module.exports = "<div class=\"row center\">\n  <button\n    (click)=\"onSearchChange(find.value)\"\n    id=\"download-button\"\n    class=\"btn-large waves-effect waves-red watermelon\"\n  >\n    Search\n  </button>\n</div>\n\n<div class=\"row center\" id=\"search\">\n  <div class=\"col s12 m4 l4\"></div>\n  <div class=\"col s12 m4 l4\">\n    <label style=\"color:#26a69a;\" for=\"input_text\"\n      >Enter a keyword (from our dB of 15 000 movie plot)</label\n    >\n    <div\n      id=\"placeholder\"\n      class=\"placeholder\"\n      data-placeholder=\"\"\n    >\n      <input id=\"input_text\" type=\"text\" id=\"find\" #find />\n    </div>\n  </div>\n  <div class=\"col s12 m4 l4\"></div>\n</div>\n\n<br /><br />\n<div [ngClass]=\"{ hidden: !find.value }\">\n  <table>\n    <thead>\n      <tr>\n        <th><a>Keyword</a></th>\n        <th><a>MovieName</a></th>\n        <th><a>ReleaseDate</a></th>\n        <th><a>Budget</a></th>\n        <th><a>BoxOffice</a></th>\n      </tr>\n    </thead>\n  </table>\n\n  <section *ngFor=\"let Movie of this.listeFilm\">\n    <app-movie [M]=\"Movie\"></app-movie>\n  </section>\n</div>\n"
 
 /***/ }),
 
@@ -234,6 +234,7 @@ var ListePaysComponent = /** @class */ (function () {
     function ListePaysComponent(countryService) {
         this.countryService = countryService;
         this.listeFilm = [];
+        this.placeholder = '';
         // 'https://imanebahousspreprod.000webhostapp.com/tblMovies.json'
     }
     ListePaysComponent.prototype.getListeMovie = function () {
@@ -255,12 +256,17 @@ var ListePaysComponent = /** @class */ (function () {
             this.countryService
                 .getMovie('https://imanebahousspreprod.000webhostapp.com/req.php?searsh=' + find)
                 .then(function (l) {
-                document
-                    .getElementById('placeholder')
-                    .setAttribute('data-placeholder', String(l.length));
+                _this.placeholder = String(l.length);
+                _this.changePlaceholder();
                 _this.listeFilm = l;
+                console.log('null');
             });
         }
+    };
+    ListePaysComponent.prototype.changePlaceholder = function () {
+        document
+            .getElementById('placeholder')
+            .setAttribute('data-placeholder', String(this.placeholder));
     };
     ListePaysComponent.prototype.ngOnInit = function () { };
     ListePaysComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

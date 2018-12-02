@@ -1,0 +1,39 @@
+<div class="row center">
+  <button
+    (click)="onSearchChange(find.value)"
+    id="download-button"
+    class="btn-large waves-effect waves-red watermelon"
+  >
+    Search
+  </button>
+</div>
+
+<div class="row center" id="search">
+  <div class="col s12 m4 l4"></div>
+  <div class="col s12 m4 l4">
+    <label style="color:#26a69a;" for="input_text"
+      >Enter a keyword (from our dB of 15 000 movie plot)</label
+    >
+    <input id="input_text" type="text" id="find" #find />
+  </div>
+  <div class="col s12 m4 l4"></div>
+</div>
+
+<br /><br />
+<div [ngClass]="{ hidden: !find.value }">
+  <table>
+    <thead>
+      <tr>
+        <th><a>Keyword</a></th>
+        <th><a>MovieName</a></th>
+        <th><a>ReleaseDate</a></th>
+        <th><a>Budget</a></th>
+        <th><a>BoxOffice</a></th>
+      </tr>
+    </thead>
+  </table>
+
+  <section *ngFor="let Movie of this.listeFilm">
+    <app-movie [M]="Movie"></app-movie>
+  </section>
+</div>

@@ -1,0 +1,27 @@
+p {
+  font-size: 24px;
+  font-weight: 300;
+  color: slategrey;
+}
+
+img {
+  height: 50px;
+  width: 75px;
+}
+
+a {
+  color: #039be5;
+}
+
+.cmp {
+  width: 100%;
+}
+
+td {
+  width: 10%;
+  text-align: center;
+}
+
+.keyword {
+  color: #26a69a;
+}

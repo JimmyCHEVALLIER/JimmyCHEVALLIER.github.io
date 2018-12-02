@@ -254,10 +254,12 @@ var ListePaysComponent = /** @class */ (function () {
             console.log('else');
             this.countryService
                 .getMovie('https://imanebahousspreprod.000webhostapp.com/req.php?searsh=' + find)
-                .then(function (l) { return (_this.listeFilm = l); });
-            document
-                .getElementById('placeholder')
-                .setAttribute('data-placeholder', String(this.listeFilm.length));
+                .then(function (l) { return (_this.listeFilm = l); })
+                .then(function (l) {
+                return document
+                    .getElementById('placeholder')
+                    .setAttribute('data-placeholder', String(_this.listeFilm.length));
+            });
         }
     };
     ListePaysComponent.prototype.ngOnInit = function () { };

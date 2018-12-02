@@ -199,7 +199,7 @@ var CountryService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".hidden {\n  display: none;\n}\n\nth {\n  width: 10%;\n  text-align: center;\n}\n\ntable > thead > tr > th > a {\n  color: rgb(179, 179, 179);\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGlzdGUtcGF5cy9saXN0ZS1wYXlzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0NBQ2Y7O0FBRUQ7RUFDRSxXQUFXO0VBQ1gsbUJBQW1CO0NBQ3BCOztBQUVEO0VBQ0UsMEJBQTBCO0NBQzNCIiwiZmlsZSI6InNyYy9hcHAvbGlzdGUtcGF5cy9saXN0ZS1wYXlzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGlkZGVuIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxudGgge1xuICB3aWR0aDogMTAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbnRhYmxlID4gdGhlYWQgPiB0ciA+IHRoID4gYSB7XG4gIGNvbG9yOiByZ2IoMTc5LCAxNzksIDE3OSk7XG59XG4iXX0= */"
+module.exports = ".hidden {\n  display: none;\n}\n\nth {\n  width: 10%;\n  text-align: center;\n}\n\ntable > thead > tr > th > a {\n  color: rgb(179, 179, 179);\n}\n\n/* webkit solution */\n\n::-webkit-input-placeholder {\n  text-align: right;\n}\n\n/* mozilla solution */\n\ninput:-moz-placeholder {\n  text-align: right;\n}\n\n.placeholder {\n  position: relative;\n}\n\n.placeholder::after {\n  position: absolute;\n  right: 6px;\n  top: 16px;\n  content: attr(data-placeholder);\n  pointer-events: none;\n  opacity: 0.6;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGlzdGUtcGF5cy9saXN0ZS1wYXlzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0NBQ2Y7O0FBRUQ7RUFDRSxXQUFXO0VBQ1gsbUJBQW1CO0NBQ3BCOztBQUVEO0VBQ0UsMEJBQTBCO0NBQzNCOztBQUVELHFCQUFxQjs7QUFDckI7RUFDRSxrQkFBa0I7Q0FDbkI7O0FBQ0Qsc0JBQXNCOztBQUN0QjtFQUNFLGtCQUFrQjtDQUNuQjs7QUFDRDtFQUNFLG1CQUFtQjtDQUNwQjs7QUFFRDtFQUNFLG1CQUFtQjtFQUNuQixXQUFXO0VBQ1gsVUFBVTtFQUNWLGdDQUFnQztFQUNoQyxxQkFBcUI7RUFDckIsYUFBYTtDQUNkIiwiZmlsZSI6InNyYy9hcHAvbGlzdGUtcGF5cy9saXN0ZS1wYXlzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGlkZGVuIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxudGgge1xuICB3aWR0aDogMTAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbnRhYmxlID4gdGhlYWQgPiB0ciA+IHRoID4gYSB7XG4gIGNvbG9yOiByZ2IoMTc5LCAxNzksIDE3OSk7XG59XG5cbi8qIHdlYmtpdCBzb2x1dGlvbiAqL1xuOjotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyIHtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG59XG4vKiBtb3ppbGxhIHNvbHV0aW9uICovXG5pbnB1dDotbW96LXBsYWNlaG9sZGVyIHtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG59XG4ucGxhY2Vob2xkZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG5cbi5wbGFjZWhvbGRlcjo6YWZ0ZXIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiA2cHg7XG4gIHRvcDogMTZweDtcbiAgY29udGVudDogYXR0cihkYXRhLXBsYWNlaG9sZGVyKTtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIG9wYWNpdHk6IDAuNjtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -210,7 +210,7 @@ module.exports = ".hidden {\n  display: none;\n}\n\nth {\n  width: 10%;\n  text-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row center\">\n  <button\n    (click)=\"onSearchChange(find.value)\"\n    id=\"download-button\"\n    class=\"btn-large waves-effect waves-red watermelon\"\n  >\n    Search\n  </button>\n</div>\n\n<div class=\"row center\" id=\"search\">\n  <div class=\"col s12 m4 l4\"></div>\n  <div class=\"col s12 m4 l4\">\n    <label style=\"color:#26a69a;\" for=\"input_text\"\n      >Enter a keyword (from our dB of 15 000 movie plot)</label\n    >\n    <input id=\"input_text\" type=\"text\" id=\"find\" #find />\n  </div>\n  <div class=\"col s12 m4 l4\"></div>\n</div>\n\n<br /><br />\n<div [ngClass]=\"{ hidden: !find.value }\">\n  <table>\n    <thead>\n      <tr>\n        <th><a>Keyword</a></th>\n        <th><a>MovieName</a></th>\n        <th><a>ReleaseDate</a></th>\n        <th><a>Budget</a></th>\n        <th><a>BoxOffice</a></th>\n      </tr>\n    </thead>\n  </table>\n\n  <section *ngFor=\"let Movie of this.listeFilm\">\n    <app-movie [M]=\"Movie\"></app-movie>\n  </section>\n</div>\n"
+module.exports = "<div class=\"row center\">\n  <button\n    (click)=\"onSearchChange(find.value)\"\n    id=\"download-button\"\n    class=\"btn-large waves-effect waves-red watermelon\"\n  >\n    Search\n  </button>\n</div>\n\n<div class=\"row center\" id=\"search\">\n  <div class=\"col s12 m4 l4\"></div>\n  <div class=\"col s12 m4 l4\">\n    <label style=\"color:#26a69a;\" for=\"input_text\"\n      >Enter a keyword (from our dB of 15 000 movie plot)</label\n    >\n    <div id=\"placeholder\" class=\"placeholder\" data-placeholder=\"\">\n      <input id=\"input_text\" type=\"text\" id=\"find\" #find />\n    </div>\n  </div>\n  <div class=\"col s12 m4 l4\"></div>\n</div>\n\n<br /><br />\n<div [ngClass]=\"{ hidden: !find.value }\">\n  <table>\n    <thead>\n      <tr>\n        <th><a>Keyword</a></th>\n        <th><a>MovieName</a></th>\n        <th><a>ReleaseDate</a></th>\n        <th><a>Budget</a></th>\n        <th><a>BoxOffice</a></th>\n      </tr>\n    </thead>\n  </table>\n\n  <section *ngFor=\"let Movie of this.listeFilm\">\n    <app-movie [M]=\"Movie\"></app-movie>\n  </section>\n</div>\n"
 
 /***/ }),
 
@@ -255,7 +255,9 @@ var ListePaysComponent = /** @class */ (function () {
             this.countryService
                 .getMovie('https://imanebahousspreprod.000webhostapp.com/req.php?searsh=' + find)
                 .then(function (l) { return (_this.listeFilm = l); });
-            console.log(this.listeFilm);
+            document
+                .getElementById('placeholder')
+                .setAttribute('data-placeholder', String(this.listeFilm.length));
         }
     };
     ListePaysComponent.prototype.ngOnInit = function () { };

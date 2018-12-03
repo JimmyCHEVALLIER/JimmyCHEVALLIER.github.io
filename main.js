@@ -161,6 +161,7 @@ var CountryService = /** @class */ (function () {
             .get(url)
             .toPromise()
             .then(function (res) {
+            console.log(res);
             var doc = res.json();
             console.log(doc);
             var data_length = doc.length;

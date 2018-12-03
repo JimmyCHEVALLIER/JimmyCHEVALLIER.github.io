@@ -161,9 +161,7 @@ var CountryService = /** @class */ (function () {
             .get(url)
             .toPromise()
             .then(function (res) {
-            console.log(res);
             var doc = res.json();
-            console.log(doc);
             var data_length = doc.length;
             _this.listMovie = [];
             var newListMovie = [];
@@ -211,7 +209,7 @@ module.exports = ".hidden {\n  display: none;\n}\n\nth {\n  width: 10%;\n  text-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row center\">\n  <button\n    (click)=\"onSearchChange(find.value)\"\n    id=\"download-button\"\n    class=\"btn-large waves-effect waves-red watermelon\"\n  >\n    Search\n  </button>\n</div>\n\n<div class=\"row center\" id=\"search\">\n  <div class=\"col s12 m4 l4\"></div>\n  <div class=\"col s12 m4 l4\">\n    <label style=\"color:#26a69a;\" for=\"input_text\"\n      >Enter a keyword (from our dB of 15 000 movie plot)</label\n    >\n    <div\n      id=\"placeholder\"\n      class=\"placeholder\"\n      data-placeholder=\"\"\n    >\n      <input id=\"input_text\" type=\"text\" id=\"find\" #find />\n    </div>\n  </div>\n  <div class=\"col s12 m4 l4\"></div>\n</div>\n\n<br /><br />\n<div [ngClass]=\"{ hidden: !find.value }\">\n  <table>\n    <thead>\n      <tr>\n        <th><a>Keyword</a></th>\n        <th><a>MovieName</a></th>\n        <th><a>ReleaseDate</a></th>\n        <th><a>Budget</a></th>\n        <th><a>BoxOffice</a></th>\n      </tr>\n    </thead>\n  </table>\n\n  <section *ngFor=\"let Movie of this.listeFilm\">\n    <app-movie [M]=\"Movie\"></app-movie>\n  </section>\n</div>\n"
+module.exports = "<div class=\"row center\">\n  <button\n    (click)=\"onSearchChange(find.value)\"\n    id=\"download-button\"\n    class=\"btn-large waves-effect waves-red watermelon\"\n  >\n    Search\n  </button>\n</div>\n\n<div class=\"row center\" id=\"search\">\n  <div class=\"col s12 m4 l4\"></div>\n  <div class=\"col s12 m4 l4\">\n    <label style=\"color:#26a69a;\" for=\"input_text\"\n      >Enter a keyword (from our dB of 15 000 movie plot)</label\n    >\n    <div id=\"placeholder\" class=\"placeholder\" data-placeholder=\"\">\n      <input id=\"input_text\" type=\"text\" id=\"find\" #find />\n    </div>\n  </div>\n  <div class=\"col s12 m4 l4\"></div>\n</div>\n\n<br /><br />\n<div [ngClass]=\"{ hidden: !find.value }\">\n  <table>\n    <thead>\n      <tr>\n        <th><a>TFIDF</a></th>\n        <th><a>MovieName</a></th>\n        <th><a>ReleaseDate</a></th>\n        <th><a>Budget</a></th>\n        <th><a>BoxOffice</a></th>\n      </tr>\n    </thead>\n  </table>\n\n  <section *ngFor=\"let Movie of this.listeFilm\">\n    <app-movie [M]=\"Movie\"></app-movie>\n  </section>\n</div>\n"
 
 /***/ }),
 
@@ -253,14 +251,12 @@ var ListePaysComponent = /** @class */ (function () {
             this.listeFilm = [];
         }
         else {
-            console.log('else');
             this.countryService
                 .getMovie('https://imanebahousspreprod.000webhostapp.com/req.php?searsh=' + find)
                 .then(function (l) {
                 _this.placeholder = String(l.length);
                 _this.changePlaceholder();
                 _this.listeFilm = l;
-                console.log('null');
             });
         }
     };
@@ -303,7 +299,7 @@ module.exports = "p {\n  font-size: 24px;\n  font-weight: 300;\n  color: slategr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<table>\n  <td class=\"keyword\">{{ getkeyword() }}</td>\n  <td>\n    <a href=\"https://fr.wikipedia.org/wiki/{{ getmoviename() }}\">{{\n      getmoviename()\n    }}</a>\n  </td>\n  <td>{{ getreleasedate() }}</td>\n  <td>+{{ getbudget() }}</td>\n  <td>{{ getboxoffice() }}</td>\n</table>\n"
+module.exports = "<table>\n  <td class=\"keyword\">_</td>\n  <td>\n    <a href=\"https://fr.wikipedia.org/wiki/{{ getmoviename() }}\">{{\n      getmoviename()\n    }}</a>\n  </td>\n  <td>{{ getreleasedate() }}</td>\n  <td>+{{ getbudget() }}</td>\n  <td>{{ getboxoffice() }}</td>\n</table>\n"
 
 /***/ }),
 

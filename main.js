@@ -170,9 +170,7 @@ var CountryService = /** @class */ (function () {
                     movieid: doc[i]['movieid'],
                     keyword: doc[i]['keyword'],
                     moviename: doc[i]['moviename'],
-                    releasedate: doc[i]['releasedate'].includes('NULL')
-                        ? '_'
-                        : doc[i]['releasedate'],
+                    releasedate: doc[i]['releasedate'],
                     budget: doc[i]['budget'],
                     boxoffice: doc[i]['boxoffice'] // borders
                 };

@@ -167,12 +167,13 @@ var CountryService = /** @class */ (function () {
             var newListMovie = [];
             for (var i = 0; i < data_length; i++) {
                 var Movie = {
-                    movieid: doc[i]['movieid'],
-                    keyword: doc[i]['keyword'],
-                    moviename: doc[i]['moviename'],
-                    releasedate: doc[i]['releasedate'],
-                    budget: doc[i]['budget'],
-                    boxoffice: doc[i]['boxoffice'] // borders
+                    movieid: doc[i]['MovieID'],
+                    keyword: doc[i]['Keyword'],
+                    moviename: doc[i]['MovieName'],
+                    releasedate: doc[i]['ReleaseDate'],
+                    budget: doc[i]['Budget'],
+                    boxoffice: doc[i]['BoxOffice'],
+                    tfidf: doc[i]['tfidfVal'] // borders
                 };
                 newListMovie.push(Movie);
             }
@@ -299,7 +300,7 @@ module.exports = "p {\n  font-size: 24px;\n  font-weight: 300;\n  color: slategr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<table>\n  <td class=\"keyword\">_</td>\n  <td>\n    <a href=\"https://en.wikipedia.org/wiki/{{getmoviename()}}\">{{\n      getmoviename()\n    }}</a>\n  </td>\n  <td>{{ getreleasedate() }}</td>\n  <td>+{{ getbudget() }}</td>\n  <td>{{ getboxoffice() }}</td>\n</table>\n"
+module.exports = "<table>\n  <td class=\"keyword\">{{ gettfidf() }}</td>\n  <td>\n    <a href=\"https://en.wikipedia.org/wiki/{{getmoviename()}}\">{{\n      getmoviename()\n    }}</a>\n  </td>\n  <td>{{ getreleasedate() }}</td>\n  <td>+{{ getbudget() }}</td>\n  <td>{{ getboxoffice() }}</td>\n</table>\n"
 
 /***/ }),
 
@@ -340,6 +341,9 @@ var MovieComponent = /** @class */ (function () {
     };
     MovieComponent.prototype.getboxoffice = function () {
         return this.M.boxoffice;
+    };
+    MovieComponent.prototype.gettfidf = function () {
+        return this.M.tfidf;
     };
     MovieComponent.prototype.ngOnInit = function () { };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

@@ -343,6 +343,7 @@ var MovieComponent = /** @class */ (function () {
         return this.M.boxoffice;
     };
     MovieComponent.prototype.gettfidf = function () {
+        console.log(parseFloat(this.M.tfidf).toFixed(2));
         return parseFloat(this.M.tfidf).toFixed(2);
     };
     MovieComponent.prototype.ngOnInit = function () { };

@@ -343,7 +343,7 @@ var MovieComponent = /** @class */ (function () {
         return this.M.boxoffice;
     };
     MovieComponent.prototype.gettfidf = function () {
-        return this.M.tfidf;
+        return parseFloat(this.M.tfidf).toFixed(2);
     };
     MovieComponent.prototype.ngOnInit = function () { };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

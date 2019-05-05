@@ -259,7 +259,7 @@ $(function() {
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
-			"description": "Nauto est une entreprise spécialisée dans l'intelligence artificiel appliquée au domaine de l’automobile. Elle s’occupe aussi bien de construire une solution capable d’améliorer le confort, par des recommandations, que la sécurité. => https://www.nauto.com/product Nauto collabore avec la startup Newton Technologies et a eu d’importantes levés de fonds. </br> “Pear Ventures was an investor in Newton, while Nauto has currently raised $173.9 million from General Motors Ventures, Toyota AI Ventures and BMW i Ventures. In July 2017, Nauto raised a $159 million Series B round from SoftBank and Greylock” => https://www.pymnts.com/news/partnerships-acquisitions/2019/safe-driving-ai-startup-newton-nauto/",
+			"description": "Nauto est une entreprise spécialisée dans l'intelligence artificiel appliquée au domaine de l’automobile. Elle s’occupe aussi bien de construire une solution capable d’améliorer le confort, par des recommandations, que la sécurité. => https://www.nauto.com/product Nauto collabore avec la startup Newton Technologies et a eu d’importantes levées de fonds. </br> “Pear Ventures was an investor in Newton, while Nauto has currently raised $173.9 million from General Motors Ventures, Toyota AI Ventures and BMW i Ventures. In July 2017, Nauto raised a $159 million Series B round from SoftBank and Greylock” => https://www.pymnts.com/news/partnerships-acquisitions/2019/safe-driving-ai-startup-newton-nauto/",
 			"link": " https://www.nauto.com/product",
 			"flag": "us",
 			"product": "PME IA",
@@ -410,6 +410,7 @@ $(function() {
 			d3.select("#flag").html("<img src='img/flags/" + self.__data__.flag + ".png'>")
 			d3.select("#logo").html("<a class='thumbnail' href='" + self.__data__.link + "'><img src='img/logos/" + self.__data__.logo + "'></a>")
 			d3.select("#description").html(self.__data__.description)
+			d3.select("#name").html(self.__data__.company)
 			d3.select("#neutral").html(function() {
 				if(self.__data__.neutrals == undefined || self.__data__.neutrals.length==0){
 					d3.select("#title_neutral").style("display", "none")
@@ -493,11 +494,30 @@ $(function() {
 			d3.select("#language").text(self.__data__.languageLong)
 			d3.select("#product").text(self.__data__.product)
 			d3.select("#test").html(self.__data__.test)
+			d3.select("#name").html(self.__data__.company)
 			d3.select("#link").html("<a href='" + self.__data__.link + "'>" + self.__data__.link + "</a>")
 			d3.select("#flag").html("<img src='img/flags/" + self.__data__.flag + ".png'>")
 			d3.select("#logo").html("<a class='thumbnail' href='" + self.__data__.link + "'><img src='img/logos/" + self.__data__.logo + "'></a>")
 			d3.select("#description").html(self.__data__.description)
+			d3.select("#neutral").html(function() {
+				if(self.__data__.neutrals == undefined || self.__data__.neutrals.length==0){
+					d3.select("#title_neutral").style("display", "none")
+					return ""
+				}
+				d3.select("#title_neutral").style("display", "block")
+				return "<ul>" + 
+							self.__data__.neutrals.map(function(elem) {
+								return "<li>" + elem + "</li>"
+							}).join("") + 
+						"</ul>"
+			})
+			d3.select("#conclusion").html(self.__data__.conclusion)
 			d3.select("#strengths").html(function() {
+				if(self.__data__.strengths == undefined || self.__data__.strengths.length==0){
+					d3.select("#title_strengths").style("display", "none")
+					return ""
+				}
+				d3.select("#title_strengths").style("display", "block")
 				return "<ul>" + 
 							self.__data__.strengths.map(function(elem) {
 								return "<li>" + elem + "</li>"
@@ -505,6 +525,11 @@ $(function() {
 						"</ul>"
 			})
 			d3.select("#cautions").html(function() {
+				if(self.__data__.cautions == undefined || self.__data__.cautions.length==0){
+					d3.select("#title_cautions").style("display", "none")
+					return ""
+				}
+				d3.select("#title_cautions").style("display", "block")
 				return "<ul>" + 
 							self.__data__.cautions.map(function(elem) {
 								return "<li>" + elem + "</li>"
@@ -534,6 +559,34 @@ $(function() {
 	// click on country reset
 	$(".country-reset").on("click", function(evt) {
 		$(".country-top").html($(this).html())
+		d3.selectAll(".item")
+			.transition()
+			.duration(1000)
+			.attr("opacity", 1)
+	})
+
+
+    // click on the type dropdown
+	$(".type-select").on("click", function(evt) {
+		$(".type-top").html($(this).html())
+		// $(".language-top").html(' \
+		// 	<i class="icon-font"></i> \
+		// 	<span></span>  \
+		// 	<span>Select Language</span> \
+		// ');
+		d3.selectAll(".item")
+			.transition()
+			.duration(1000)
+			.attr("opacity", 1)
+		d3.selectAll(".item:not(." + $(this).attr("id").replace("_", " ") + ")")
+			.transition()
+			.duration(1000)
+			.attr("opacity", 0.1)
+	})
+	
+	// click on country reset
+	$(".type-reset").on("click", function(evt) {
+		$(".type-top").html($(this).html())
 		d3.selectAll(".item")
 			.transition()
 			.duration(1000)

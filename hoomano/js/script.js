@@ -139,7 +139,7 @@ $(function() {
 		{
 			"company": "Sensum",
 			"cov": 60,
-			"ate": 60,
+			"ate": 65,
 			"label_x": -2,
 			"label_y": 0,
 			"text_anchor": "end",
@@ -184,8 +184,8 @@ $(function() {
 		},
 		{
 			"company": "PSA x EPFL",
-			"cov": 0,
-			"ate": 0,
+			"cov": 10,
+			"ate": 15,
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
@@ -207,10 +207,10 @@ $(function() {
 		},
 		{
 			"company": "Toyota Boshoku",
-			"cov": 0,
-			"ate": 0,
-			"label_x": -1,
-			"label_y": +2,
+			"cov": 30,
+			"ate": 25,
+			"label_x": +18,
+			"label_y": -4,
 			"text_anchor": "end",
 			"description": "Équipementier affilié à la marque japonaise Toyota. A développé et a présenté au CES 2018 une solution nommée ACES, un système de détection d’émotions qui peut déterminer votre humeur actuelle.",
 			"link": "https://www.toyota-boshoku.com/global/index.html",
@@ -230,8 +230,8 @@ $(function() {
 		},
 		{
 			"company": "Argo IA",
-			"cov": 50,
-			"ate": 50,
+			"cov": 40,
+			"ate": 80,
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
@@ -242,7 +242,6 @@ $(function() {
 			"strengths": [
 				"Expérience: - Bien -  Actuellement capable de concurrencer les plus influents, cette startup sortie de l’obscurité laisse penser que leur expérience n’est plus à prouver. Leur site internet introduit leur produit et leurs applications.",
 				"Innovation: - Très bien - Leur solution étant elle-même innovante, nous identifions un indice important pour cet acteur"
-			
 			],
 			"cautions": [
 			"Indice concurrence : - Très concurrentiel - Leur positionnement stratégique étant très avantageux et avec le soutien d’un grand constructeur comme Ford, Argo IA est un acteur redoutable sur le marché actuel."
@@ -254,8 +253,8 @@ $(function() {
 		},
 		{
 			"company": "NAUTO",
-			"cov": 50,
-			"ate": 50,
+			"cov": 70,
+			"ate": 80,
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
@@ -271,14 +270,14 @@ $(function() {
 			"cautions": [
 			"Indice concurrence : - Très concurrentiel -  Nauto étant spécialisé dans l’amélioration de l'expérience au volant, ils pourraient être un concurrent direct."
 			],
-			"conclusion": "Très bien -  Dans l’ensemble, Nauto a tout d’un acteur sérieux et intéressant pour Hoomano. Acteur très intéressant.",
+			"conclusion": "Très bien -  Dans l’ensemble, Nauto a tout d’un acteur sérieux et intéressant pour Hoomano.",
 			"neutrals" :[
 			] 
 		},
 		{
 			"company": "KIA",
-			"cov": 50,
-			"ate": 50,
+			"cov": 10,
+			"ate": 10,
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
@@ -302,8 +301,8 @@ $(function() {
 		},
 		{
 			"company": "Nuance",
-			"cov": 50,
-			"ate": 50,
+			"cov": 55,
+			"ate": 85,
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
@@ -326,8 +325,8 @@ $(function() {
 		},
 		{
 			"company": "nViso",
-			"cov": 50,
-			"ate": 50,
+			"cov": 52,
+			"ate": 52,
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
@@ -351,8 +350,8 @@ $(function() {
 		},
 		{
 			"company": "Byton",
-			"cov": 50,
-			"ate": 50,
+			"cov": 5,
+			"ate": 5,
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",

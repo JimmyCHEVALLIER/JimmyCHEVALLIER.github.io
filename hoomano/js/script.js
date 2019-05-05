@@ -122,6 +122,7 @@ $(function() {
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
+			"language": "startup",
 			"description": "Affectiva en quelques chiffres ⇒  4 milliards d’images analysées, travaille avec 7 des 10 principaux constructeurs automobiles, utilisé par 25% de Global Fortune 500. Affectiva est une startup initialement spécialisée dans la collecte de données liées aux émotions au service du marketing, la publicité les vidéos ou encore les programmes télé. Ils se sont ensuite développés dans la sécurité automobile en appliquant leurs technologies aux services des constructeurs automobiles ou équipementiers.",
 			"link": "http://www.affectiva.com/",
 			"flag": "us",
@@ -147,6 +148,7 @@ $(function() {
 			"link": "http://www.Sensum.com/",
 			"flag": "ir",
 			"product": "Startup IA",
+			"language": "startup",
 			"strengths": [
 				"Indice collaboration : - Bien - Étant donné la taille d’entreprise de Sensum, une quinzaine d’employés environ, et la niche du marché de l’intelligence artificielle sur laquelle elle se place, c’est à dire la détection d’émotions, Sensum peut s’avérer être un bon collaborateur. Cependant ils sont comme dit précédemment, sur le marché depuis quelques années et font l’objet de beaucoup de financement et n’ont à première vue pas besoins de collaborateurs.",
 				"Expérience: - Très bien - La startup a été fondée en 2012 comme dit précédemment donc elle est en avance sur le marché au niveau de l'expérience par rapport aux premiers concurrents. Ils ont déjà développé des projets avec différentes grandes entreprises dont des équipementiers et des constructeurs automobiles. <a href='https://drive.google.com/file/d/1MwaaCGcR006rMNJn7jx2-mx-nIpxv8oT/view?usp=sharing'>Sensum book</a>",
@@ -169,6 +171,7 @@ $(function() {
 			"link": "https://www.valeo.com/fr/valeo-ai/",
 			"flag": "us",
 			"product": "Équipementier",
+			"language": "equipementier",
 			"strengths": [
 			
 			"Expérience: - Bien - Valeo et Sensum développent une technologie baptisée \"empathic mobility tech\" (technologie de la mobilité empathique).",
@@ -189,6 +192,7 @@ $(function() {
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
+			"language": "collaboration",
 			"description": "Projet en partenariat avec PSA basé sur la reconnaissance d’émotions dans une voiture en associant différentes approches. Le projet est avant tout basé sur un usage d’assistance à la conduite par l’intermédiaire de la détection d’émotions. Nous verrons dans un autre cas que l’EPFL mène aussi des études sur l’application de la détection d’émotion pour un usage plus marketing avec d’autres acteurs comme nViso.",
 			"link": "https://lts5www.epfl.ch/research/face_analysis/",
 			"flag": "us",
@@ -216,6 +220,7 @@ $(function() {
 			"link": "https://www.toyota-boshoku.com/global/index.html",
 			"flag": "us",
 			"product": "Équipementier",
+			"language": "equipementier",
 			"strengths": [
 				"Innovation : - Très bien -  Présentant des prototype innovant au CES 2018, leur indice innovation n’est plus à prouver.",
 				"Indice collaboration : - Bien - Un équipementier automobile à l'international, présent en France et en Europe pourrait être intéressant pour Hoomano. Leurs intérêts pour la reconnaissance d’émotion pourraient bien aller dans le sens de ce que recherche Hoomano.",
@@ -239,6 +244,7 @@ $(function() {
 			"link": "https://www.argo.ai/blog/",
 			"flag": "us",
 			"product": "PME IA",
+			"language": "pme",
 			"strengths": [
 				"Expérience: - Bien -  Actuellement capable de concurrencer les plus influents, cette startup sortie de l’obscurité laisse penser que leur expérience n’est plus à prouver. Leur site internet introduit leur produit et leurs applications.",
 				"Innovation: - Très bien - Leur solution étant elle-même innovante, nous identifions un indice important pour cet acteur"
@@ -262,6 +268,7 @@ $(function() {
 			"link": " https://www.nauto.com/product",
 			"flag": "us",
 			"product": "PME IA",
+			"language": "pme",
 			"strengths": [
 "Indice collaboration : - Très Bien - En Europe, au Japon ou aux US, Nauto est ouvert à créer des partenariats comme indiqué sur leur site. => https://www.nauto.com/contact",
 "Expérience: - Très bien - Nauto montre une certaine expérience par la diversité de sa clientèle et applications de leur solution.",
@@ -285,6 +292,7 @@ $(function() {
 			"link": "https://www.digitaltrends.com/cars/kia-emotion-recognition-ai-tech-at-ces-2019/",
 			"flag": "us",
 			"product": "Constructeur automobile",
+			"language": "constructeur",
 			"strengths": [
 				"Innovation: - Bien -  Présentation d’un projet au CES 2019"
 			],
@@ -310,6 +318,7 @@ $(function() {
 			"link": "https://www.nuance.com",
 			"flag": "us",
 			"product": "Editeur logiciels",
+			"language": "editeur_logiciels",
 			"strengths": [
 				"Indice collaboration : - Très Bien - Leur domaine de compétence pourrait se lier à ce que souhaite faire Hoomano: “As innovation leaders in conversational AI, we’ve spent decades pursuing the possibilities of the human voice—including its potential to transform the relationship between people and cars. Because each voice is as unique as a fingerprint, we combine voice biometrics with intelligent speech signal processing to create a powerful environment for in-vehicle speech. The result is an optimal experience for each user and an infinite capacity for personalized comfort, elevating the satisfaction of everyone who rides in your cars.” (ref: https://www.nuance.com/fr-fr/automotive/voice-biometrics.html)",
 				"Expérience: - Très bien -  Aujourd'hui, plus de 200 millions de voitures en circulation bénéficient des technologies Dragon Drive, leur produit phare.",
@@ -334,6 +343,7 @@ $(function() {
 			"link": "https://www.nviso.com",
 			"flag": "us",
 			"product": "Startup IA",
+			"language": "startup",
 			"strengths": [
 			"Indice collaboration : - Bien - Partenaire du Fancy Project, nViso traite aussi bien la reconnaissance faciale que l’analyse vocale. Ils sont localisés dans la cité de l’innovation à Lausanne.",
 			"Indice concurrence : - Peu concurrentiel - nViso est plus spécialisé dans la détection faciale.",
@@ -355,6 +365,7 @@ $(function() {
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
+			"language": "constructeur",
 			"description": "Byton est un constructeur automobile chinois fondé en 2018.",
 			"link": "https://www.byton.com",
 			"flag": "us",

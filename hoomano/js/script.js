@@ -165,9 +165,9 @@ $(function() {
 			"label_x": -1,
 			"label_y": +2,
 			"text_anchor": "end",
-			"description": "TGE, Valeo emploie 111 600 salariés dans 33 pays répartis sur 184 sites de production, 24 centres de recherche, 34 centres de développement et 15 plates-formes de distribution. (ref <a href='https://fr.wikipedia.org/wiki/Valeo'>ici</a>),<br>Valeo est un fournisseur automobile et partenaire des constructeurs automobiles dans le monde entier. En tant que société concurrentielle, elle s’est spécialisée dans l’innovation automobile, avec un accent particulier sur les systèmes d’aides à la conduite et la réduction des émissions de CO₂. Le Groupe fournit et distribue également des pièces de rechange pour les constructeurs automobiles et les opérateurs indépendants du marché des pièces de rechange.",
+			"description": "Très Grande Entrprise, Valeo emploie 111 600 salariés dans 33 pays répartis sur 184 sites de production, 24 centres de recherche, 34 centres de développement et 15 plates-formes de distribution. (ref <a href='https://fr.wikipedia.org/wiki/Valeo'>ici</a>),<br>Valeo est un fournisseur automobile et partenaire des constructeurs automobiles dans le monde entier. En tant que société concurrentielle, elle s’est spécialisée dans l’innovation automobile, avec un accent particulier sur les systèmes d’aides à la conduite et la réduction des émissions de CO₂. Le Groupe fournit et distribue également des pièces de rechange pour les constructeurs automobiles et les opérateurs indépendants du marché des pièces de rechange.",
 			"link": "https://www.valeo.com/fr/valeo-ai/",
-			"flag": "us",
+			"flag": "fr",
 			"product": "Équipementier",
 			"strengths": [
 			
@@ -191,7 +191,7 @@ $(function() {
 			"text_anchor": "end",
 			"description": "Projet en partenariat avec PSA basé sur la reconnaissance d’émotions dans une voiture en associant différentes approches. Le projet est avant tout basé sur un usage d’assistance à la conduite par l’intermédiaire de la détection d’émotions. Nous verrons dans un autre cas que l’EPFL mène aussi des études sur l’application de la détection d’émotion pour un usage plus marketing avec d’autres acteurs comme nViso.",
 			"link": "https://lts5www.epfl.ch/research/face_analysis/",
-			"flag": "us",
+			"flag": "ch",
 			"product": "Collaboration",
 			"strengths": [
 				"Innovation: - Très bien -  Ce projet de recherche touche à une problématique intéressante pour Hoomano."
@@ -214,7 +214,7 @@ $(function() {
 			"text_anchor": "end",
 			"description": "Équipementier affilié à la marque japonaise Toyota. A développé et a présenté au CES 2018 une solution nommée ACES, un système de détection d’émotions qui peut déterminer votre humeur actuelle.",
 			"link": "https://www.toyota-boshoku.com/global/index.html",
-			"flag": "us",
+			"flag": "jp",
 			"product": "Équipementier",
 			"strengths": [
 				"Innovation : - Très bien -  Présentant des prototype innovant au CES 2018, leur indice innovation n’est plus à prouver.",
@@ -283,7 +283,7 @@ $(function() {
 			"text_anchor": "end",
 			"description": "Projet véhicule autonome avec détection d’émotions des passagers (CES 2019)",
 			"link": "https://www.digitaltrends.com/cars/kia-emotion-recognition-ai-tech-at-ces-2019/",
-			"flag": "us",
+			"flag": "kr",
 			"product": "Constructeur automobile",
 			"strengths": [
 				"Innovation: - Bien -  Présentation d’un projet au CES 2019"
@@ -332,7 +332,7 @@ $(function() {
 			"text_anchor": "end",
 			"description": "NVISO fournit des solutions d'intelligence artificielle capables de détecter, de comprendre et d'agir sur le comportement humain à l'aide de l'analyse des émotions.",
 			"link": "https://www.nviso.com",
-			"flag": "us",
+			"flag": "ch",
 			"product": "Startup IA",
 			"strengths": [
 			"Indice collaboration : - Bien - Partenaire du Fancy Project, nViso traite aussi bien la reconnaissance faciale que l’analyse vocale. Ils sont localisés dans la cité de l’innovation à Lausanne.",
@@ -357,7 +357,7 @@ $(function() {
 			"text_anchor": "end",
 			"description": "Byton est un constructeur automobile chinois fondé en 2018.",
 			"link": "https://www.byton.com",
-			"flag": "us",
+			"flag": "cn",
 			"product": "Constructeur automobile",
 			"strengths": [
 				"Innovation: - Très bien -  CES 2018 véhicule star du CES avec de nombreuse prouesses technologique dont l’assistance vocale très évoluée."

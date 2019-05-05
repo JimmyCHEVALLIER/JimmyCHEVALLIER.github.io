@@ -1,3 +1,17 @@
+.dropdown-menu li a img {
+	height: 11px;
+	width: 16px;
+}
+.country-top img {
+	height: 11px;
+	width: 16px;
+}
+
+#flag img{
+    width: 21px;
+    vertical-align: middle;
+}
+
 #canvas {
 	width: 600px;
 	height: 400px;

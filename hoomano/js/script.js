@@ -227,6 +227,151 @@ $(function() {
 			"neutrals" :[
 				"Indice concurrence : Étant encore à l’état de prototype nous n’avons pas trouvé d’informations sur la commercialisation de ce dernier. Il se pourrait qu’il le devienne (concurrentiel) à l’avenir."
 			] 
+		},
+		{
+			"company": "Argo IA",
+			"cov": 50,
+			"ate": 50,
+			"label_x": -1,
+			"label_y": +2,
+			"text_anchor": "end",
+			"description": "Argo AI est une société basée aux Etats-Unis spécialisée dans la conception de véhicules autonomes et l’amélioration de l'expérience de conduite afin de la rendre plus agréable, plus accessible et sécurisée. Bénéficie d’ 1 milliard de dollars de soutien de Ford.",
+			"link": "https://www.argo.ai/blog/",
+			"flag": "us",
+			"product": "PME IA",
+			"strengths": [
+				"Expérience: - Bien -  Actuellement capable de concurrencer les plus influents, cette startup sortie de l’obscurité laisse penser que leur expérience n’est plus à prouver. Leur site internet introduit leur produit et leurs applications.",
+				"Innovation: - Très bien - Leur solution étant elle-même innovante, nous identifions un indice important pour cet acteur"
+			
+			],
+			"cautions": [
+			"Indice concurrence : - Très concurrentiel - Leur positionnement stratégique étant très avantageux et avec le soutien d’un grand constructeur comme Ford, Argo IA est un acteur redoutable sur le marché actuel."
+			],
+			"conclusion": "Bien -  Un acteur très intéressant avec une situation privilégié. Le soutien financier de Ford a clairement révélé cette startup qui est maintenant à la pointe de l’innovation dans le domaine de l’IA appliquée aux véhicules autonomes.",
+			"neutrals" :[
+				"Indice collaboration : Il est clair que Argo à les fonds et l’expérience pour susciter l'intérêt d’une entreprise comme Hoomano. Une prise de contact avec cet acteur permettrait d’en apprendre un peu plus sur leurs intentions et les possibilités de partenariat."
+			] 
+		},
+		{
+			"company": "NAUTO",
+			"cov": 50,
+			"ate": 50,
+			"label_x": -1,
+			"label_y": +2,
+			"text_anchor": "end",
+			"description": "Nauto est une entreprise spécialisée dans l'intelligence artificiel appliquée au domaine de l’automobile. Elle s’occupe aussi bien de construire une solution capable d’améliorer le confort, par des recommandations, que la sécurité. => https://www.nauto.com/product Nauto collabore avec la startup Newton Technologies et a eu d’importantes levés de fonds. </br> “Pear Ventures was an investor in Newton, while Nauto has currently raised $173.9 million from General Motors Ventures, Toyota AI Ventures and BMW i Ventures. In July 2017, Nauto raised a $159 million Series B round from SoftBank and Greylock” => https://www.pymnts.com/news/partnerships-acquisitions/2019/safe-driving-ai-startup-newton-nauto/",
+			"link": " https://www.nauto.com/product",
+			"flag": "us",
+			"product": "PME IA",
+			"strengths": [
+"Indice collaboration : - Très Bien - En Europe, au Japon ou aux US, Nauto est ouvert à créer des partenariats comme indiqué sur leur site. => https://www.nauto.com/contact",
+"Expérience: - Très bien - Nauto montre une certaine expérience par la diversité de sa clientèle et applications de leur solution.",
+"Innovation: - Très bien -  Projets de recherches et collaborations avec d’autres startups pour innover d’avantage.",
+			],
+			"cautions": [
+			"Indice concurrence : - Très concurrentiel -  Nauto étant spécialisé dans l’amélioration de l'expérience au volant, ils pourraient être un concurrent direct."
+			],
+			"conclusion": "Très bien -  Dans l’ensemble, Nauto a tout d’un acteur sérieux et intéressant pour Hoomano. Acteur très intéressant.",
+			"neutrals" :[
+			] 
+		},
+		{
+			"company": "KIA",
+			"cov": 50,
+			"ate": 50,
+			"label_x": -1,
+			"label_y": +2,
+			"text_anchor": "end",
+			"description": "Projet véhicule autonome avec détection d’émotions des passagers (CES 2019)",
+			"link": "https://www.digitaltrends.com/cars/kia-emotion-recognition-ai-tech-at-ces-2019/",
+			"flag": "us",
+			"product": "Constructeur automobile",
+			"strengths": [
+				"Innovation: - Bien -  Présentation d’un projet au CES 2019"
+			],
+			"cautions": [
+				"Expérience: - Très mauvais -  Aucun projet n’a encore vraiment vu le jour sur le marché."
+
+			],
+			"conclusion": "Mauvais -  Mis à part un projet innovant, Kia reste dans l’ombre de Hyundai qui semble prendre les devants à cet égard. Pour rappel Kia est une filiale de Hyundai. => https://www.digitaltrends.com/cars/kia-emotion-recognition-ai-tech-at-ces-2019/",
+			"neutrals" :[
+				"Indice collaboration : - Neutre -  Trop peu d’informations",
+				"Indice concurrence : - Neutre -  Trop peu d’informations",
+
+			] 
+		},
+		{
+			"company": "Nuance",
+			"cov": 50,
+			"ate": 50,
+			"label_x": -1,
+			"label_y": +2,
+			"text_anchor": "end",
+			"description": "Nuance est une multinationale américaine qui crée et commercialise des logiciels d’imagerie et de reconnaissance vocale. Ils sont maintenant spécialisés aussi dans le domaine de l’automobile et travaillent sur l’IA émotionnelle, les interactions multimodales en réalité augmentée, ou encore les capacités conversationnelles avancées. (Siège social : Burlington, Massachusetts, États-Unis)",
+			"link": "https://www.nuance.com",
+			"flag": "us",
+			"product": "Editeur logiciels",
+			"strengths": [
+				"Indice collaboration : - Très Bien - Leur domaine de compétence pourrait se lier à ce que souhaite faire Hoomano: “As innovation leaders in conversational AI, we’ve spent decades pursuing the possibilities of the human voice—including its potential to transform the relationship between people and cars. Because each voice is as unique as a fingerprint, we combine voice biometrics with intelligent speech signal processing to create a powerful environment for in-vehicle speech. The result is an optimal experience for each user and an infinite capacity for personalized comfort, elevating the satisfaction of everyone who rides in your cars.” (ref: https://www.nuance.com/fr-fr/automotive/voice-biometrics.html)",
+				"Expérience: - Très bien -  Aujourd'hui, plus de 200 millions de voitures en circulation bénéficient des technologies Dragon Drive, leur produit phare.",
+				"Innovation: - Très bien -  Nuance travail sur des sujets telles que l’IA émotionnelle, les interactions multimodales en réalité augmentée, ou encore les capacités de conversationnelles avancées (Homme/machine) se rapprochant des fonctionnalité que propose les robots de Hoomano. => https://www.nuance.com/fr-fr/about-us/newsroom/press-releases/nuance-automotive-fait-evoluer-lexperience-utilisateur-humanisee-pour-la-voiture-numerique-de-demain.html#!"			
+			],
+			"cautions": [
+				"Indice concurrence : - Très concurrentiel - Surement dans les acteurs les plus implantés sur le marché."
+
+			],
+			"conclusion": "Très bien -  Incontestablement un acteur à ne pas manquer pour Hoomano car il pourrait bien être précurseur dans le domaine de la reconnaissance / échange vocal.",
+			"neutrals" :[
+			] 
+		},
+		{
+			"company": "nViso",
+			"cov": 50,
+			"ate": 50,
+			"label_x": -1,
+			"label_y": +2,
+			"text_anchor": "end",
+			"description": "NVISO fournit des solutions d'intelligence artificielle capables de détecter, de comprendre et d'agir sur le comportement humain à l'aide de l'analyse des émotions.",
+			"link": "https://www.nviso.com",
+			"flag": "us",
+			"product": "Startup IA",
+			"strengths": [
+			"Indice collaboration : - Bien - Partenaire du Fancy Project, nViso traite aussi bien la reconnaissance faciale que l’analyse vocale. Ils sont localisés dans la cité de l’innovation à Lausanne.",
+			"Indice concurrence : - Peu concurrentiel - nViso est plus spécialisé dans la détection faciale.",
+			"Innovation: - Très bien -  Faisant partie d’un projet européen d’innovation et d’envergure, leur indice d’innovation est fort.",
+
+				],
+			"cautions": [
+
+			],
+			"conclusion": "Neutre - Peu de communications sur cet acteur mais le projet FANCY dont ils font partie pourrait être intéressant pour Hoomano.",
+			"neutrals" :[
+			"Expérience: Peu d'informations"
+			] 
+		},
+		{
+			"company": "Byton",
+			"cov": 50,
+			"ate": 50,
+			"label_x": -1,
+			"label_y": +2,
+			"text_anchor": "end",
+			"description": "Byton est un constructeur automobile chinois fondé en 2018.",
+			"link": "https://www.byton.com",
+			"flag": "us",
+			"product": "Constructeur automobile",
+			"strengths": [
+				"Innovation: - Très bien -  CES 2018 véhicule star du CES avec de nombreuse prouesses technologique dont l’assistance vocale très évoluée."
+				],
+			"cautions": [
+
+			],
+			"conclusion": "Neutre -  Beaucoup d’informations concernant le véhicule présenté au CES mais peu de communications sur la suite des évènements.",
+			"neutrals" :[
+				"Indice collaboration : - Neutre -",
+				"Indice concurrence : - Neutre -  ",
+				"Expérience: - Neutre -  "
+			] 
 		}
 
 	]
